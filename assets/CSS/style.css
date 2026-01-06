@@ -1,0 +1,46 @@
+body{
+    font-family:"Roboto", sans-serif;
+}
+
+/* Header */
+
+.btn-menu{
+    background-color: rgba(0, 0, 255, 0.2);
+    padding: 0.5em;
+    border: 1px solid blue;
+    box-shadow: 4px 4px 0 blue;
+}
+
+
+
+/* Main-accueil */
+
+.liste-container{
+    width: 60%;
+    overflow: scroll;
+    border: 2px solid black;
+    height: 300px;
+}
+
+td:not(:last-child), th:not(:last-child){
+    border-right: 2px solid black;
+}
+
+/* Main-informations */
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc{
+    overflow: scroll;
+    border: 2px solid black;
+    height: 30vh;
+}
+
+.style{
+    list-style: none;
+    text-decoration: none;
+}
