@@ -1,0 +1,229 @@
+{
+    "promo" : [
+    {
+      "nom" : "EDWM2611FT",
+      "dateDebut" : "2026-11-09",
+      "dateFin" : "2026-05-04",
+      "description" : "La formation DWWM (Développeur Web et Web Mobile) forme aux bases du développement de sites et d’applications web, côté front-end et back-end, afin de créer des solutions numériques adaptées aux ordinateurs et aux mobiles.",
+      "nombreApprenants" : "18"
+    }
+  ],
+    "apprenants" : [
+    {
+      "id" : 1,
+      "nom" : "Martin",
+      "prenom" : "Alice",
+      "ville" : "Paris",
+      "avatar" : "./assets/images/AliceMartin.png",
+      "anecdotes" : "A déjà raté son métro trois jours de suite… mais a toujours le sourire !",
+      "coordonnees": {
+        "latitude" : "48.866667",
+        "longitude" : "2.333333"
+      }
+    },
+    {
+      "id" : 2,
+      "nom" : "Dubois",
+      "prenom" : "Léo",
+      "ville": "Lyon",
+      "avatar" : "./assets/images/LeoDubois.png",
+      "anecdotes" : "Champion d’échecs du lycée, il croit qu’il peut battre l’ordinateur.",
+      "coordonnees": {
+        "latitude" : "45.7578137",
+        "longitude" : "4.8320114"
+      }
+    },
+    {
+      "id" : 3,
+      "nom" : "Lefèvre",
+      "prenom" : "Camille",
+      "ville": "Marseille",
+      "avatar" : "./assets/images/CamilleLefevre.png",
+      "anecdotes" : "A goûté à toutes les bouillabaisses du port (et a un avis sur chacune).",
+      "coordonnees": {
+        "latitude" : "43.2961743",
+        "longitude" : "5.3699525"
+      }
+    },
+    {
+      "id" : 4,
+      "nom" : "Moreau",
+      "prenom" : "Arthur",
+      "ville": "Toulouse",
+      "avatar" : "./assets/images/ArthurMoreau.png",
+      "anecdotes" : "Passionné de rugby, il a déjà terminé un match en short… en hiver.",
+      "coordonnees": {
+        "latitude" : "43.6044638",
+        "longitude" : "1.4442433"
+      }
+    },
+    {
+      "id" : 5,
+      "nom" : "Laurent",
+      "prenom" : "Chloé",
+      "ville": "Nice",
+      "avatar" : "./assets/images/ChloeLaurent.png",
+      "anecdotes" : "Photographe amateur, elle prend en photo… des pigeons.",
+      "coordonnees": {
+        "latitude" : "43.7009358",
+        "longitude" : "7.2683912"
+      }
+    },
+    {
+      "id" : 6,
+      "nom" : "Petit",
+      "prenom" : "Maxime",
+      "ville": "Nantes",
+      "avatar" : "./assets/images/MaximePetit.png",
+      "anecdotes" : "A essayé de lancer une troupe de théâtre étudiante avec deux planches et une lampe.",
+      "coordonnees": {
+        "latitude" : "47.2186371",
+        "longitude" : "-1.5541362"
+      }
+    },
+    {
+      "id" : 7,
+      "nom" : "Mercier",
+      "prenom" : "Sophie",
+      "ville": "Strasbourg",
+      "avatar" : "./assets/images/SophieMercier.png",
+      "anecdotes" : "Parle alsacien… et force tout le monde à goûter la tarte flambée",
+      "coordonnees": {
+        "latitude" : "48.584614",
+        "longitude" : "7.7507127"
+      }
+    },
+    {
+      "id" : 8,
+      "nom" : "Roux",
+      "prenom" : "Julien",
+      "ville": "Montpellier",
+      "avatar" : "./assets/images/JulienRoux.png",
+      "anecdotes" : "A failli devenir joueur de pétanque professionnel.",
+      "coordonnees": {
+        "latitude" : "43.6112422",
+        "longitude" : "3.8767337"
+      }
+    },
+    {
+      "id" : 9,
+      "nom" : "Faure",
+      "prenom" : "Élise",
+      "ville": "Bordeaux",
+      "avatar" : "./assets/images/EliseFaure.png",
+      "anecdotes" : "Collectionne les bouteilles… mais seulement celles à bulles !",
+      "coordonnees": {
+        "latitude" : "44.841225",
+        "longitude" : "-0.5800364"
+      }
+    },
+    {
+      "id" : 10,
+      "nom" : "Blanchet",
+      "prenom" : "Thomas",
+      "ville": "",
+      "avatar" : "./assets/images/ThomasBlanchet.png",
+      "anecdotes" : "Est convaincu que les frites de sa ville sont les meilleures (et il le prouve).",
+      "coordonnees": {
+        "latitude" : "50.6365654",
+        "longitude" : "3.0635282"
+      }
+    },
+    {
+      "id" : 11,
+      "nom" : "Girard",
+      "prenom" : "Laura",
+      "ville": "Rennes",
+      "avatar" : "./assets/images/LauraGirard.png",
+      "anecdotes" : "A essayé de battre le record du plus long time-lapse de la place centrale.",
+      "coordonnees": {
+        "latitude" : "48.1113387",
+        "longitude" : "-1.6800198"
+      }
+    },
+    {
+      "id" : 12,
+      "nom" : "Bernard",
+      "prenom" : "Antoine",
+      "ville": "Reims",
+      "avatar" : "./assets/images/AntoineBernard.png",
+      "anecdotes" : "Passionné d’histoire, il récite des dates… même au petit-déjeuner.",
+      "coordonnees": {
+        "latitude" : "49.2577886",
+        "longitude" : "4.031926"
+      }
+    },
+    {
+      "id" : 13,
+      "nom" : "Dupont",
+      "prenom" : "Inès",
+      "ville": "Saint-Étienne",
+      "avatar" : "./assets/images/InesDupont.png",
+      "anecdotes" : "A dessiné une bande dessinée sur la vie étudiante (en 24h).",
+      "coordonnees": {
+        "latitude" : "45.4401467",
+        "longitude" : "4.3873058"
+      }
+    },
+    {
+      "id" : 14,
+      "nom" : "Fontaine",
+      "prenom" : "Lucas",
+      "ville": "Toulon",
+      "avatar" : "./assets/images/LucasFontaine.png",
+      "anecdotes" : "Futur marin, il ne se sépare jamais de sa casquette bleue.",
+      "coordonnees": {
+        "latitude" : "43.1257311",
+        "longitude" : "5.9304919"
+      }
+    },
+    {
+      "id" : 15,
+      "nom" : "Chevalier",
+      "prenom" : "Manon",
+      "ville": "Grenoble",
+      "avatar" : "./assets/images/ManonChevalier.png",
+      "anecdotes" : "Skieuse hors saison… parce que “ça motive pour travailler”.",
+      "coordonnees": {
+        "latitude" : "45.1875602",
+        "longitude" : "5.7357819"
+      }
+    },
+    {
+      "id" : 16,
+      "nom" : "Perrot",
+      "prenom" : "Nicolas",
+      "ville": "Dijon",
+      "avatar" : "./assets/images/NicolasPerrot.png",
+      "anecdotes" : "A mangé une moutarde différente chaque jour… pendant un mois.",
+      "coordonnees": {
+        "latitude" : "47.3215806",
+        "longitude" : "5.0414701"
+      }
+    },
+    {
+      "id" : 17,
+      "nom" : "Gauthier",
+      "prenom" : "Justine",
+      "ville": "Angers",
+      "avatar" : "./assets/images/JustineGauthier.png",
+      "anecdotes" : "A remporté un concours de poésie locale en 2025.",
+      "coordonnees": {
+        "latitude" : "47.4739884",
+        "longitude" : "-0.5515588"
+      }
+    },
+    {
+      "id" : 18,
+      "nom" : "Lefort",
+      "prenom" : "Romain",
+      "ville": "Nîmes",
+      "avatar" : "./assets/images/RomainLefort.png",
+      "anecdotes" : "Connaît toutes les anecdotes sur les arènes romaines… par cœur.",
+      "coordonnees": {
+        "latitude" : "43.8374249",
+        "longitude" : "4.3600687"
+      }
+    }
+  ]
+}

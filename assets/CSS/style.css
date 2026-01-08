@@ -11,7 +11,9 @@ body{
     box-shadow: 4px 4px 0 blue;
 }
 
-
+button{
+    color:inherit;
+}
 
 /* Main-accueil */
 
@@ -43,4 +45,38 @@ td:not(:last-child), th:not(:last-child){
 .style{
     list-style: none;
     text-decoration: none;
+    color: inherit;
+}
+
+/* Theme */
+
+body.clair{
+    background-color: #ffffff;
+    color: #121212;
+}
+
+body.sombre{
+    background-color: #060031;
+    color: #ffffff;
+    
+}
+
+/* navbar bootstrap theme */
+
+body.sombre .navbar,
+body.sombre .navbar-collapse {
+    background-color: #060031;
+    color: #ffffff;
+}
+
+body.sombre .nav-link {
+    color: #ffffff !important;
+}
+
+body.sombre .navbar-toggler {
+    border-color: #ffffff;
+}
+
+body.sombre .navbar-toggler-icon {
+    filter: invert(1);
 }
