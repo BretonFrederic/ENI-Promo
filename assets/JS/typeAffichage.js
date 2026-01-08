@@ -14,7 +14,6 @@ for (const affichage of affichages) {
 
 function appliquerAffichage(){
     for (const affichage of affichages) {
-        console.log(affichageType[0].getAttribute("id"));
         
         if(affichage.checked){
             affichageType[0].hidden = (affichageType[1].getAttribute("id") == affichage.value);
@@ -30,6 +29,7 @@ window.addEventListener("load", (e)=>{
     appliquerAffichage();
 });
 
+// Appliquer type affichage ponctuellement
 formAffichage.addEventListener("change", ()=>{
     appliquerAffichage();
 });

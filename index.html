@@ -12,7 +12,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assets/CSS/style.css">
         <script src="./assets/JS/theme.js" defer></script>
-        <script src="./assets/JS/affichage.js" defer></script>
+        <script src="./assets/JS/typeAffichage.js" defer></script>
+        <script src="./assets/JS/apprenants.js" defer></script>
     </head>
     <body>
         <header>
@@ -68,67 +69,7 @@
                                     <th></th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td><a href="#">Détail</a></td>
-                                </tr>
-                                <tr>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td><a href="#">Détail</a></td>
-                                </tr>
-                                                    <tr>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td><a href="#">Détail</a></td>
-                                </tr>
-                                                    <tr>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td><a href="#">Détail</a></td>
-                                </tr>
-                                                    <tr>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td><a href="#">Détail</a></td>
-                                </tr>
-                                                    <tr>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td><a href="#">Détail</a></td>
-                                </tr>
-                                                    <tr>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td><a href="#">Détail</a></td>
-                                </tr>
-                                                    <tr>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td><a href="#">Détail</a></td>
-                                </tr>
-                                                    <tr>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td><a href="#">Détail</a></td>
-                                </tr>
-                                                    <tr>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td>XXXXXXXXXX</td>
-                                    <td><a href="#">Détail</a></td>
-                                </tr>
+                            <tbody id="tableau">
                             </tbody>
                         </table>
                     </div>
@@ -139,7 +80,7 @@
                     <h5>Liste des apprenants</h5>
                 </div>
                 <div class="container-fluid">
-                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4 justify-content-center">
+                    <div id="grille-cartes" class="row row-cols-1 row-cols-md-3 row-cols-lg-6 g-4 justify-content-center">
                         <div class="col d-flex justify-content-center">
                             <div class="card h-100" style="max-width: 12rem;">
                                 <div class="card-body">

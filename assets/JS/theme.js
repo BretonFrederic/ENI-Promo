@@ -8,10 +8,14 @@ function afficherClair(){
     document.body.classList.add("clair");
 }
 
-function afficherTheme(){
+function sauvegarderTheme(){
     // Persistance des préférences "clair" si theme n'est pas généré
-    const themeSauvegarde = localStorage.getItem("theme") || "clair";
-    if(themeSauvegarde === "clair"){
+    return localStorage.getItem("theme") || "clair";
+}
+
+function afficherTheme(theme){
+
+    if(theme === "clair"){
         afficherClair();
     }else{
         afficherSombre();
@@ -21,6 +25,6 @@ function afficherTheme(){
 window.addEventListener("load", (e)=>{
     // Eviter le rechargement du formulaire
     e.preventDefault(); 
-
-    afficherTheme();
+    const themeSauvegarde = sauvegarderTheme();
+    afficherTheme(themeSauvegarde);
 });
