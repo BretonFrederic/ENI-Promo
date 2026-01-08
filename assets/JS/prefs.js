@@ -26,3 +26,29 @@ enregistrer.addEventListener("click", ()=>{
     stockerTheme();
     stockerAffichage();
 });
+
+// Appliquer theme ponctuellement
+
+function afficherSombre(){
+    document.body.classList.remove("clair");
+    document.body.classList.add("sombre");
+}
+
+function afficherClair(){
+    document.body.classList.remove("sombre");
+    document.body.classList.add("clair");
+}
+
+function afficherTheme(){
+    const themeSelect = document.getElementById("theme");
+    if(themeSelect === "clair"){
+        afficherClair();
+    }else{
+        afficherSombre();
+    }
+}
+
+document.getElementById("prefs-form").addEventListener("focus", ()=>{
+    afficherTheme();
+})
+
