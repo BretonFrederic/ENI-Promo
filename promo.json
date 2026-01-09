@@ -46,7 +46,7 @@
       "nom" : "Martin",
       "prenom" : "Alice",
       "ville" : "Paris",
-      "avatar" : "",
+      "avatar" : "./assets/images/AliceMartin.png",
       "anecdotes" : "A déjà raté son métro trois jours de suite… mais a toujours le sourire !",
       "coordonnees": {
         "latitude" : "48.866667",
