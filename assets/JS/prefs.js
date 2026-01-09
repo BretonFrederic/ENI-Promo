@@ -22,7 +22,8 @@ function stockerAffichage(){
     }
 }
 
-enregistrer.addEventListener("click", ()=>{
+enregistrer.addEventListener("click", (e)=>{
+    e.preventDefault();
     stockerTheme();
     stockerAffichage();
 });

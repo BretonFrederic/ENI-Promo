@@ -1,12 +1,3 @@
-function afficherSombre(){
-    document.body.classList.remove("clair");
-    document.body.classList.add("sombre");
-}
-
-function afficherClair(){
-    document.body.classList.remove("sombre");
-    document.body.classList.add("clair");
-}
 
 function sauvegarderTheme(){
     // Persistance des préférences "clair" si theme n'est pas généré
@@ -14,17 +5,14 @@ function sauvegarderTheme(){
 }
 
 function afficherTheme(theme){
-
-    if(theme === "clair"){
-        afficherClair();
-    }else{
-        afficherSombre();
-    }
+    document.body.classList.remove("sombre", "clair");
+    theme === "clair" ? document.body.classList.add(theme) : document.body.classList.add("sombre");
 }
 
-window.addEventListener("load", (e)=>{
+window.addEventListener("DOMContentLoaded", (e)=>{
     // Eviter le rechargement du formulaire
     e.preventDefault(); 
     const themeSauvegarde = sauvegarderTheme();
     afficherTheme(themeSauvegarde);
 });
+

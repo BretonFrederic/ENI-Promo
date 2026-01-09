@@ -15,6 +15,11 @@ button{
     color:inherit;
 }
 
+/* retirer l'héritage de la navbar */
+.navbar-title {
+    font-size: initial; /* casse l’héritage navbar */
+}
+
 /* Main-accueil */
 
 .liste-container{
