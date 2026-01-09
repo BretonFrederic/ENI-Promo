@@ -14,7 +14,7 @@ async function afficherInfos(infosPromo) {
 
     datesFormation.textContent = `Formation du ${dateDebutFr} au ${dateFinFr}`;
 
-    nombreApprenants.textContent = `Nombre d'apprenants :  ${infosPromo.apprenants.length}`;
+    nombreApprenants.textContent = `Nombre d'apprenants :  ${infosPromo.promo[0]["nombreApprenants"]}`;
 
     description.textContent = infosPromo.promo[0]["description"];
     

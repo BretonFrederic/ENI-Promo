@@ -87,6 +87,16 @@ body.sombre .navbar-toggler-icon {
     filter: invert(1);
 }
 
+/* modal-accueil */
+.liste-container{
+    min-width: 20rem;
+    height: 60vh;
+}
+
+.modal-content{
+    top: 15rem;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 576px) {
@@ -106,6 +116,11 @@ body.sombre .navbar-toggler-icon {
 
     h2{
        font-size: 1.2rem!important; 
+    }
+
+    /* main-preferences */
+    #btn-retour{
+        width: 154px;
     }
 }
 
