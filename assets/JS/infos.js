@@ -44,7 +44,7 @@ async function downloadJson(){
             // Renvoie une promise qui retourne le résultat du parsing 
             // du body text, comme JSON ,lorsqu'elle est résolue.
             const promoJson = await reponse.json();
-            
+
             // Affichage des informations générales
             await afficherInfos(promoJson);
 
