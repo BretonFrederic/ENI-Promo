@@ -2,10 +2,27 @@
     "promo" : [
     {
       "nom" : "EDWM2611FT",
-      "dateDebut" : "2026-11-09",
-      "dateFin" : "2026-05-04",
+      "dateDebut" : "2026-11-09T00:00:00Z",
+      "dateFin" : "2026-05-04T00:00:00Z",
       "description" : "La formation DWWM (Développeur Web et Web Mobile) forme aux bases du développement de sites et d’applications web, côté front-end et back-end, afin de créer des solutions numériques adaptées aux ordinateurs et aux mobiles.",
-      "nombreApprenants" : "18"
+      "nombreApprenants" : "18",
+      "liensUtiles" : [
+        {
+          "nomSite": "zestedesavoir", "url": "https://zestedesavoir.com/bibliotheque/?type=tutorial"
+        },
+        {
+          "nomSite": "git", "url": "https://git-scm.com/book/fr/v2"
+        },
+        {
+          "nomSite": "sql.sh", "url": "https://sql.sh/"
+        },
+        {
+          "nomSite": "cyril-gruau ConceptionBD", "url": "https://cyril-gruau.developpez.com/uml/tutoriel/ConceptionBD/"
+        },
+        {
+          "nomSite": "pierre-giraud", "url": "https://www.pierre-giraud.com/"
+        }
+      ]
     }
   ],
     "apprenants" : [

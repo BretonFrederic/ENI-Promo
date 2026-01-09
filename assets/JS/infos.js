@@ -1,28 +1,54 @@
 const description = document.getElementById("description");
 const liensUtiles = document.getElementById("liens-utiles");
 
-// Données de description
-let texteDesc = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis totam incidunt labore laboriosam. Neque harum dolorem quam sed. Ad pariatur quisquam esse eos ea excepturi neque, sunt obcaecati iusto aut doloribus voluptates ut veritatis unde deleniti facilis ducimus labore repudiandae aliquid necessitatibus accusamus harum autem iste. Vitae accusantium nobis, itaque in quibusdam porro sapiente possimus iusto reprehenderit autem, aliquid eos odit quas architecto necessitatibus, tempore vel deleniti quidem incidunt tenetur magnam voluptas harum? Perspiciatis distinctio culpa veniam vitae. Doloremque amet voluptatem debitis consequatur accusamus eum."
+async function afficherInfos(infosPromo) {
+    const datesFormation = document.getElementById("dates");
 
-// Données clés valeurs pour les liens utiles
-let listeLiens = new Map();
-listeLiens.set('zestedesavoir', 'https://zestedesavoir.com/bibliotheque/?type=tutorial')
-listeLiens.set('git', 'https://git-scm.com/book/fr/v2')
-listeLiens.set('sql.sh', 'https://sql.sh/')
-listeLiens.set('cyril-gruau ConceptionBD', 'https://cyril-gruau.developpez.com/uml/tutoriel/ConceptionBD/')
-listeLiens.set('pierre-giraud', 'https://www.pierre-giraud.com/html-css-apprendre-coder-cours/')
+    const dateDebut = Date.parse(infosPromo.promo[0]["dateDebut"]);
+    const dateFin = Date.parse(infosPromo.promo[0]["dateFin"]);
+    const nombreApprenants = document.getElementById("nombre-apprenants");
+    const description = document.getElementById("description");
 
-// Afficher le contenu de description
-description.textContent = texteDesc;
+    const dateDebutFr = new Date(dateDebut).toLocaleDateString("fr-FR");
+    const dateFinFr = new Date(dateFin).toLocaleDateString("fr-FR");
 
-// Générer et afficher les liens utiles dans la zone de texte
-for (const [key, value] of listeLiens) {
-    const nouveauLien = document.createElement('a');
-    nouveauLien.setAttribute('href', value);
-    nouveauLien.textContent = key;
-    nouveauLien.target = "_blank";
-    nouveauLien.rel = "noopener noreferrer"; // Empêche les onglets ou fenêtres nouvellement ouverts de contrôler la page d’origine
+    datesFormation.textContent = `Formation du ${dateDebutFr} au ${dateFinFr}`;
 
-    liensUtiles.appendChild(nouveauLien);
-    liensUtiles.appendChild(document.createElement('br'));
+    nombreApprenants.textContent = `Nombre d'apprenants :  ${infosPromo.apprenants.length}`;
+
+    description.textContent = infosPromo.promo[0]["description"];
+    
+    // Générer et afficher les liens utiles
+    infosPromo.promo[0].liensUtiles.forEach(lien => {
+        const ancre = document.createElement('a');
+        ancre.setAttribute("href", lien["url"]);
+        ancre.textContent = lien["nomSite"];
+        liensUtiles.appendChild(ancre);
+    });
+
+
 }
+
+async function downloadJson(){
+    try {
+            const url ="./promo.json";
+            const reponse = await fetch(url); // promise
+            // reponse.ok contient un booléen statuant s'il s'agit d'une réponse 
+            // indiquant un succès (statut HTTP entre 200 et 299) ou non.
+            if(!reponse.ok){
+                throw new Error("Erreur chargement de données");
+            }
+            // reponse.json() prend le stream de la Response et le lit jusqu'à la fin. 
+            // Renvoie une promise qui retourne le résultat du parsing 
+            // du body text, comme JSON ,lorsqu'elle est résolue.
+            const promoJson = await reponse.json();
+            
+            // Affichage des informations générales
+            await afficherInfos(promoJson);
+
+        } catch (error) {
+            console.log(error.message);
+    }
+}
+
+downloadJson();
