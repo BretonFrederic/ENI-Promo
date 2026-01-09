@@ -133,9 +133,12 @@ async function initialiserModale(data){
                     document.getElementById("ville").textContent = apprenant["ville"];
 
                     const img = document.getElementById("avatar");
-                    if (apprenant["avatar"]) {
-                        img.setAttribute("src", apprenant["avatar"]);
-                    }
+                    
+                    const nomImg = apprenant["avatar"].split("/");
+                    const imgPng = nomImg[nomImg.length-1] == "" ? "avatar.png" : nomImg[nomImg.length-1];
+                    
+                    const lien = `./assets/images/${imgPng}`;
+                    img.setAttribute("src", lien);
                     
                     document.getElementById("anecdotes").textContent = apprenant["anecdotes"];
                 }

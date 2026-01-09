@@ -4,11 +4,11 @@
       "nom" : "EDWM2611FT",
       "dateDebut" : "2026-11-09T00:00:00Z",
       "dateFin" : "2026-05-04T00:00:00Z",
-      "description" : "La formation DWWM (Développeur Web et Web Mobile) forme aux bases du développement de sites et d’applications web, côté front-end et back-end, afin de créer des solutions numériques adaptées aux ordinateurs et aux mobiles.",
+      "description" : "La formation DWWM prépare aux métiers de développeur web et mobile en enseignant les compétences essentielles du développement d’applications et de sites web, tant côté client (front-end) que côté serveur (back-end). Elle couvre les langages et technologies utilisés pour créer des interfaces interactives (HTML, CSS, JavaScript) et pour gérer la logique serveur, les bases de données ainsi que la sécurité des applications. L’objectif est de former des développeurs capables de concevoir, réaliser et déployer des solutions web réactives adaptées aux différents supports (ordinateurs, tablettes, smartphones), et de les rendre opérationnels pour des missions en entreprise ou comme indépendants. La formation est souvent certifiante à niveau Bac +2 (Titre professionnel reconnu RNCP) avec des projets pratiques et parfois des périodes en entreprise.",
       "nombreApprenants" : "18",
       "liensUtiles" : [
         {
-          "nomSite": "zestedesavoir", "url": "https://zestedesavoir.com/bibliotheque/?type=tutorial"
+          "nomSite": "Udemy", "url": "https://www.udemy.com/"
         },
         {
           "nomSite": "git", "url": "https://git-scm.com/book/fr/v2"
@@ -21,6 +21,21 @@
         },
         {
           "nomSite": "pierre-giraud", "url": "https://www.pierre-giraud.com/"
+        },
+        {
+          "nomSite": "Grafikart.fr", "url": "https://grafikart.fr"
+        },
+        {
+          "nomSite": "OpenClassrooms", "url": "https://openclassrooms.com/"
+        },
+        {
+          "nomSite": "CodinGame", "url": "https://www.codingame.com/home"
+        },
+        {
+          "nomSite": "W3Schools", "url": "https://www.w3schools.com/"
+        },
+        {
+          "nomSite": "Sololearn", "url": "https://www.sololearn.com/"
         }
       ]
     }

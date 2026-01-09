@@ -1,21 +1,8 @@
-
-function afficherlieux(apprenants){
-    // Initialisation de la carte
-    const map = L.map('map').setView([46.232192999999995, 2.209666999999996], 5); // Paris
-
-    // Fond de carte OpenStreetMap
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
-
-    // Boucle pour créer les marqueurs
-    
-    apprenants.forEach(infos => {
-    L.marker([infos.coordonnees.latitude, infos.coordonnees.longitude])
-        .addTo(map)
-        .bindPopup(`<b>${infos.nom} ${infos.prenom}</b>`);
-    });
+async function afficherTitre(infosPromo) {
+    const h1 = document.getElementById("titre");
+    h1.textContent = `Promo ${infosPromo.promo[0]["nom"]}`;
 }
+
 async function downloadJson(){
     try {
             const url ="./promo.json";
@@ -29,11 +16,9 @@ async function downloadJson(){
             // Renvoie une promise qui retourne le résultat du parsing 
             // du body text, comme JSON ,lorsqu'elle est résolue.
             const promoJson = await reponse.json();
-
-            // Affichage de la localisation des apprenants sur une carte
-            //const lieuxApprenants = await chargerlieux(promoJson.apprenants);
             
-            afficherlieux(promoJson.apprenants);
+            // Afficher titre h1
+            await afficherTitre(promoJson);
 
         } catch (error) {
             console.log(error.message);

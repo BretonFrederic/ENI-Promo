@@ -14,7 +14,7 @@ async function afficherInfos(infosPromo) {
 
     datesFormation.textContent = `Formation du ${dateDebutFr} au ${dateFinFr}`;
 
-    nombreApprenants.textContent = `Nombre d'apprenants :  ${infosPromo.apprenants.length}`;
+    nombreApprenants.textContent = `Nombre d'apprenants :  ${infosPromo.promo[0]["nombreApprenants"]}`;
 
     description.textContent = infosPromo.promo[0]["description"];
     
@@ -22,6 +22,8 @@ async function afficherInfos(infosPromo) {
     infosPromo.promo[0].liensUtiles.forEach(lien => {
         const ancre = document.createElement('a');
         ancre.setAttribute("href", lien["url"]);
+        ancre.setAttribute("target", "_blank");
+        ancre.setAttribute("rel", "noopener noreferrer");
         ancre.textContent = lien["nomSite"];
         liensUtiles.appendChild(ancre);
     });
@@ -42,7 +44,7 @@ async function downloadJson(){
             // Renvoie une promise qui retourne le résultat du parsing 
             // du body text, comme JSON ,lorsqu'elle est résolue.
             const promoJson = await reponse.json();
-            
+
             // Affichage des informations générales
             await afficherInfos(promoJson);
 

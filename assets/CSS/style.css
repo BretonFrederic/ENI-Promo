@@ -1,5 +1,6 @@
 body{
     font-family:"Roboto", sans-serif;
+    min-width: 380px;
 }
 
 /* Header */
@@ -16,8 +17,8 @@ button{
 }
 
 /* retirer l'héritage de la navbar */
-.navbar-title {
-    font-size: initial; /* casse l’héritage navbar */
+.navbar-brand {
+    margin-right: unset;
 }
 
 /* Main-accueil */
@@ -85,3 +86,53 @@ body.sombre .navbar-toggler {
 body.sombre .navbar-toggler-icon {
     filter: invert(1);
 }
+
+/* modal-accueil */
+.liste-container{
+    min-width: 20rem;
+    height: 60vh;
+}
+
+.modal-content{
+    top: 15rem;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 576px) {
+    
+    #titre{
+        font-size: 1.2rem!important;
+    }
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 576px) {
+    
+    .navbar-brand img{
+        width: 90%;
+        ;
+    }
+
+    h2{
+       font-size: 1.2rem!important; 
+    }
+
+    /* main-preferences */
+    #btn-retour{
+        width: 154px;
+    }
+}
+
+
+
+
+/*
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
