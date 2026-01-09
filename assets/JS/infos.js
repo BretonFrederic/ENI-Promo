@@ -22,6 +22,8 @@ async function afficherInfos(infosPromo) {
     infosPromo.promo[0].liensUtiles.forEach(lien => {
         const ancre = document.createElement('a');
         ancre.setAttribute("href", lien["url"]);
+        ancre.setAttribute("target", "_blank");
+        ancre.setAttribute("rel", "noopener noreferrer");
         ancre.textContent = lien["nomSite"];
         liensUtiles.appendChild(ancre);
     });
